@@ -33,6 +33,7 @@ dependencies = [
     "dill>=0.3.6",
     "matplotlib>=3.7.2",
     "numpy>=1.13.3",
+    "qlisp>=1.0.1",
     "scikit-learn>=0.24.1",
     "scikit-optimize>=0.8.1",
     "scipy>=1.0.0",
