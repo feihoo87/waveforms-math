@@ -1,5 +1,5 @@
 from qlisp.simulator.matricies import synchronize_global_phase
-from ..simple import seq2mat as _seq2mat
+from qlisp.simulator.simple import seq2mat as _seq2mat
 
 
 def twoQubitGate(gates):
