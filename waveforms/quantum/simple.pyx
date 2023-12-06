@@ -106,8 +106,8 @@ def place_at(l, bits):
 
 
 def reduceSubspace(targets, N, inputMat, func, args):
-    innerDim = 2**len(targets)
-    outerDim = 2**(N - len(targets))
+    innerDim = 1 << len(targets)
+    outerDim = 1 << (N - len(targets))
 
     targets = tuple(reversed([N - i - 1 for i in targets]))
 
