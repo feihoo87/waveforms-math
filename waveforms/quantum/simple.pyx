@@ -249,7 +249,11 @@ def seq2mat(seq, U=None):
             raise ValueError(
                 'Measure and Reset must be applied to a state vector')
         else:
-            _apply_gate(gate, U, unitary_process, qubits, N)
+            try:
+                _apply_gate(gate, U, unitary_process, qubits, N)
+            except:
+                print("\n\n\n================", gate, qubits, N, "\n===================\n\n\n")
+                raise
     return U
 
 
