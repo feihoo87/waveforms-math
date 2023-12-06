@@ -2,10 +2,10 @@ from functools import reduce
 from itertools import chain, product
 
 import numpy as np
+from qlisp.simulator.matricies import (BellPhiM, BellPhiP, BellPsiM, BellPsiP,
+                                       sigmaI, sigmaX, sigmaY, sigmaZ)
 from scipy.linalg import eigh, expm, logm, sqrtm
 
-from waveforms.math.matricies import (BellPhiM, BellPhiP, BellPsiM, BellPsiP,
-                                      sigmaI, sigmaX, sigmaY, sigmaZ)
 from waveforms.math.signal import decay, oscillation
 
 # Paulis

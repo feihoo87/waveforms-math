@@ -39,7 +39,6 @@ def test_import():
     import waveforms.math.group.clifford.group
     import waveforms.math.group.permutation_group
     import waveforms.math.interval
-    import waveforms.math.matricies
     import waveforms.math.paulis
     import waveforms.math.prime
     import waveforms.math.signal

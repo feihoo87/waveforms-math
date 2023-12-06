@@ -5,8 +5,8 @@ from pathlib import Path
 
 import numpy as np
 from numpy import pi
+from waveforms.cache import cache_dir
 
-from ...cache import cache_dir
 from .mat import mat2num, num2mat
 from .seq2mat import seq2mat
 

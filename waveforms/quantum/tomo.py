@@ -3,15 +3,15 @@ from functools import lru_cache, reduce
 from itertools import chain, combinations, product, repeat
 
 import numpy as np
+from qlisp.simulator.matricies import (sigmaI, sigmaM, sigmaP, sigmaX, sigmaY,
+                                       sigmaZ)
 from qlisp.simulator.simple import _matrix_of_gates
 from scipy import linalg, optimize
 from scipy.sparse import coo_matrix, csc_matrix
 from scipy.sparse.linalg import inv, lsqr
 
-from waveforms.math.matricies import (sigmaI, sigmaM, sigmaP, sigmaX, sigmaY,
-                                      sigmaZ)
+from waveforms.cache import cache
 
-from ..cache import cache
 from .math import dagger, normalize, randomUnitary, unitary2v, v2unitary
 
 __base_op = {

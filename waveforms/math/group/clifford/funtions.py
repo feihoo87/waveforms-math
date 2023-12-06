@@ -3,10 +3,9 @@ from functools import lru_cache, reduce
 
 import numpy as np
 from numpy import pi
+from qlisp.simulator.matricies import U
 
 from waveforms.cache import cache
-
-from ...matricies import U
 
 
 def cliffordOrder(n: int) -> int:

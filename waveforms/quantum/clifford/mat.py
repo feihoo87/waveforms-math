@@ -1,8 +1,7 @@
 from itertools import count, product
 
 import numpy as np
-
-from waveforms.math.matricies import synchronize_global_phase
+from qlisp.simulator.matricies import synchronize_global_phase
 
 # 相位规范化后，2 比特 Clifford 群元的矩阵元仅可能取以下值
 elms = [

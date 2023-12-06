@@ -4,6 +4,8 @@ import operator
 import random
 
 import numpy as np
+from qlisp.simulator.matricies import synchronize_global_phase
+from qlisp.simulator.simple import applySeq, seq2mat
 
 from waveforms.math.group import CliffordGroup, PermutationGroup
 from waveforms.math.group.clifford import (cliffordOrder,
@@ -12,8 +14,6 @@ from waveforms.math.group.clifford.funtions import (
     one_qubit_clifford_matricies, one_qubit_clifford_mul_table,
     one_qubit_clifford_seq, one_qubit_clifford_seq2)
 from waveforms.math.group.clifford.group import make_clifford_generators
-from waveforms.math.matricies import synchronize_global_phase
-from qlisp.simulator.simple import applySeq, seq2mat
 
 
 def make_circuit(gate, N):
