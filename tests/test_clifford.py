@@ -5,7 +5,7 @@ import random
 
 import numpy as np
 from qlisp.simulator.matricies import synchronize_global_phase
-from qlisp.simulator.simple import applySeq, seq2mat
+from waveforms.quantum.simple import applySeq, seq2mat
 
 from waveforms.math.group import CliffordGroup, PermutationGroup
 from waveforms.math.group.clifford import (cliffordOrder,

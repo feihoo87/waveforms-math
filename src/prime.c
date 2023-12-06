@@ -27,7 +27,7 @@ void sieve(size_t size, uint64_t *primes)
     while (i < size)
     {
         bool is_prime = true;
-        uint64_t limit = isqrt(n, limit);
+        limit = isqrt(n, limit);
         for (uint64_t *prime = primes; *prime <= limit; prime++)
         {
             if (n % (*prime) == 0)
