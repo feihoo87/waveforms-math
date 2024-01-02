@@ -100,6 +100,7 @@ def exp_decay_filter_old(amp, tau, sample_rate):
 def exp_decay_filter(amp: float | Sequence[float],
                      tau: float | Sequence[float],
                      sample_rate: float,
+                     inv: bool = False,
                      output='ba') -> tuple[np.ndarray, np.ndarray]:
     """
     exp decay filter
@@ -123,6 +124,7 @@ def exp_decay_filter(amp: float | Sequence[float],
         amp (float): amplitude of the filter
         tau (float): decay time
         sample_rate (float): sampling rate
+        inv (bool): if True, the filter is inverted
         output (str): output type, 'ba' for numerator (b) and denominator (a)
             polynomials, 'sos' for second-order sections, 'zpk' for zeros (z),
             poles (p) and gain (k). See scipy.signal.lfilter for more.
@@ -147,6 +149,8 @@ def exp_decay_filter(amp: float | Sequence[float],
 
     z = np.exp(-numerator.roots / sample_rate)
     p = np.exp(-denominator.roots / sample_rate)
+    if inv:
+        z, p = p, z
     k = numerator(0) / denominator(0) * np.prod(1 - p) / np.prod(1 - z)
 
     if output == 'sos':
