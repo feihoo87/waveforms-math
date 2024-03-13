@@ -32,12 +32,6 @@ def test_import():
     import waveforms.math.fit.symmetry
     import waveforms.math.func
     import waveforms.math.graph
-    import waveforms.math.group
-    import waveforms.math.group._SU_n_
-    import waveforms.math.group.clifford
-    import waveforms.math.group.clifford.funtions
-    import waveforms.math.group.clifford.group
-    import waveforms.math.group.permutation_group
     import waveforms.math.interval
     import waveforms.math.paulis
     import waveforms.math.prime
@@ -46,8 +40,6 @@ def test_import():
     import waveforms.math.signal.distortion
     import waveforms.math.signal.func
     import waveforms.math.transmon
-    import waveforms.math.group.clifford.chp
-    import waveforms.math.group.clifford.chp_numpy
 
     import waveforms.quantum
     import waveforms.quantum.analyze
