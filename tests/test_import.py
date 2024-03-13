@@ -40,17 +40,11 @@ def test_import():
     import waveforms.math.signal.distortion
     import waveforms.math.signal.func
     import waveforms.math.transmon
-
     import waveforms.quantum
     import waveforms.quantum.analyze
     import waveforms.quantum.analyze.coupling
     import waveforms.quantum.analyze.decoherence
     import waveforms.quantum.analyze.gate_error
-    import waveforms.quantum.clifford
-    import waveforms.quantum.clifford.clifford
-    import waveforms.quantum.clifford.db
-    import waveforms.quantum.clifford.mat
-    import waveforms.quantum.clifford.seq2mat
     import waveforms.quantum.fourier_grid
     import waveforms.quantum.math
     import waveforms.quantum.rb
