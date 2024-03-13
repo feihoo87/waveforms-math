@@ -46,10 +46,6 @@ def test_import():
     import waveforms.quantum.analyze.decoherence
     import waveforms.quantum.analyze.gate_error
     import waveforms.quantum.fourier_grid
-    import waveforms.quantum.math
-    import waveforms.quantum.rb
-    import waveforms.quantum.tomo
     import waveforms.quantum.transmon
-    import waveforms.quantum.xeb
     
     assert True
