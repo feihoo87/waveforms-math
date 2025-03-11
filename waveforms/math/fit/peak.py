@@ -1,5 +1,4 @@
 import numpy as np
-from matplotlib.colors import Normalize
 from scipy.optimize import curve_fit
 from scipy.signal import peak_widths
 
@@ -63,6 +62,8 @@ def fit_peaks(x, y, n=1):
         bg: background
         See also: waveforms.math.signal.func.peaks
     """
+    from matplotlib.colors import Normalize
+    
     norm_x = Normalize(vmax=np.max(x), vmin=np.min(x))
     norm_y = Normalize(vmax=np.max(y), vmin=np.min(y))
 
